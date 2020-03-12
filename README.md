@@ -15,6 +15,7 @@ pip install -e .
 ###### Note : you must be connected with the PlutoX Wifi.
 
 Arming the Drone and takeoff
+create arm.py file and copy bellow code.
 ```python
 from plutox import *
 import time
@@ -27,6 +28,9 @@ if __name__ == '__main__':
     time.sleep(2)
     client.land()
     client.disArm()
+```
+```
+python arm.py
 ```
 ###### Command Functions
 | Function Name | Description |
