@@ -31,13 +31,13 @@ if __name__ == '__main__':
 ###### Command Functions
 | Function Name | Description |
 | --- | --- |
-| ``` def takeOff()``` | Take of the drone |
-| ``` def land()``` | land the Drone, disconnect conection|
-| ```frontFlip()``` | flip from front side |
-| ```backFlip()``` | flip from back size |
-| ```rightFlip()``` | flip from right side |
-| ``` leftFlip()``` | flip from right side |
-| ``` arm()``` | Arm the drone |
-| ``` disArm()``` | Disarm the drone |
+| `def takeOff()` | Take of the drone |
+| `def land()` | land the Drone, disconnect conection|
+| `frontFlip()` | flip from front side |
+| `backFlip()` | flip from back size |
+| `rightFlip()` | flip from right side |
+| `leftFlip()` | flip from right side |
+| `arm()` | Arm the drone |
+| `disArm()` | Disarm the drone |
 
 ##### Note: Work in progress.
