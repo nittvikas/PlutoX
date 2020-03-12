@@ -34,7 +34,7 @@ if __name__ == '__main__':
 | `def takeOff()` | Take of the drone |
 | `def land()` | land the Drone, disconnect conection|
 | `frontFlip()` | flip from front side |
-| `backFlip()` | flip from back size |
+| `backFlip()` | flip from back side |
 | `rightFlip()` | flip from right side |
 | `leftFlip()` | flip from right side |
 | `arm()` | Arm the drone |
