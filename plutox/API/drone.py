@@ -20,59 +20,58 @@ class Drone():
         this method will take off the drone
         :return: None
         """
-        self.sendData(self.msgType.command(1))
+        self.sendData(self.msgType.command(1), "takeOff")
 
     def land(self):
         """
         this method will lang the Drone
         :return: None
         """
-        self.sendData(self.msgType.command(2))
-        self.conn.close()
+        self.sendData(self.msgType.command(2), "Land")
 
     def backFlip(self):
         """
         for back flip
         :return:
         """
-        self.sendData(self.msgType.command(3))
+        self.sendData(self.msgType.command(3), "BackFlip")
 
     def frontFlip(self):
         """
         for back flip
         :return:
         """
-        self.sendData(self.msgType.command(4))
+        self.sendData(self.msgType.command(4), "frontFlip")
 
     def rightFlip(self):
         """
         for back flip
         :return:
         """
-        self.sendData(self.msgType.command(5))
+        self.sendData(self.msgType.command(5), "rightFlip")
 
     def leftFlip(self):
         """
         for back flip
         :return:
         """
-        self.sendData(self.msgType.command(6))
+        self.sendData(self.msgType.command(6), "LeftFlip")
 
     def arm(self):
         """
         this will arm the Drone it need to be called before flying
         :return: None
         """
-        self.sendData(self.msgType.arming(True))
+        self.sendData(self.msgType.arming(True), "ARM")
 
     def disArm(self):
         """
         this will arm the Drone it need to be called before flying
         :return: None
         """
-        self.sendData(self.msgType.arming(False))
+        self.sendData(self.msgType.arming(False), "Disarm")
 
-    def sendData(self, data):
+    def sendData(self, data, err):
 
         """
         this method will send the data to the Drone
@@ -82,4 +81,5 @@ class Drone():
         try:
             self.conn.write(data)
         except:
-            print("Error While sending the Data")
+            print("Error While sending {} Data".format(err))
+

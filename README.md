@@ -37,11 +37,11 @@ python arm.py
 | --- | --- |
 | `def takeOff()` | Take of the drone |
 | `def land()` | land the Drone, disconnect conection|
-| `frontFlip()` | flip from front side |
-| `backFlip()` | flip from back side |
-| `rightFlip()` | flip from right side |
-| `leftFlip()` | flip from right side |
-| `arm()` | Arm the drone |
-| `disArm()` | Disarm the drone |
+| `def frontFlip()` | flip from front side |
+| `def backFlip()` | flip from back side |
+| `def rightFlip()` | flip from right side |
+| `def leftFlip()` | flip from right side |
+| `def arm()` | Arm the drone |
+| `def disArm()` | Disarm the drone |
 
 ##### Note: Work in progress.
